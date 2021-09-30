@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "parcel src/index.html --port 8080",
-    "old_build": "parcel build src/index.html --public-url /$npm_package_name/ -d build && gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -22,7 +22,6 @@
     "lit-element": "^3.0.0"
   },
   "devDependencies": {
-    "cssnano": "^5.0.8",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-standard": "^16.0.2",
@@ -31,7 +30,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^5.0.0",
     "gh-pages": "^3.1.0",
-    "postcss": "^8.3.8",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0"
   }
